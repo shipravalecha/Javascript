@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+
+</HEAD>
+
+<BODY>
+
+
+<script type= "text/javascript">
+
+function sqrt()
+{
+
+   var x = prompt("enter a number", "");
+   var count = 0;
+
+for (i = 2; i < x; i++){
+
+   if(x % i == "0" && i * i == x)
+   {
+      document.write("sqrt of " +x +" is: " +i +"<br/>");
+	  count = 1;
+   }
+   
+}
+
+if (count == 0)
+{
+alert("enter a valid number to find sq root!");
+}
+}
+
+</script>
+
+<form>
+<input type="button" value="press me!" onclick="sqrt()" />
+</form>
+
+</BODY>
+</HTML>

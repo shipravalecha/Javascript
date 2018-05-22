@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+
+<script type= "text/javascript">
+
+function fn1()
+{
+document.write("i am first <br/>");
+
+}
+
+function fn2()
+{
+document.write("i am 2nd");
+
+}
+</script>
+
+</BODY>
+</HTML>

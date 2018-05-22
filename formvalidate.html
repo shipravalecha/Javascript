@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+
+</HEAD>
+
+<BODY>
+
+<form name= "form1">
+
+Username: <input type= "text" name = "text">
+Password: <input type= "password" name= "password"> <br/>
+
+<input type="button" value= "Submit" onclick= "validator()">
+
+</form>
+
+
+<script type= "text/javascript">
+
+function validator(){
+
+if(document.form1.text.value == "")
+{
+
+alert(" username is required");
+
+}
+else if(document.form1.password.value == "")
+{
+
+alert(" password is required");
+
+}
+
+else
+{
+
+alert("submitted");
+form1.text.value = "";
+form1.password.value = "";
+
+
+}
+
+}
+
+</script>
+
+</BODY>
+</HTML>
+

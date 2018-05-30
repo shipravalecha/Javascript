@@ -1,0 +1,36 @@
+
+function rot13(str) { // LBH QVQ VG!
+  var index1 = [];
+  var index2 = [];
+  var str2;
+  var val1;
+  var arr1 = str.split('');
+ //return arr1;
+  
+  var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var arr2 = alphabet.split('');
+ //return arr2;
+  //return str.length;
+  var str1 = arr1;
+    //return str1;
+  for(var i = 0; i < str.length; i++){
+
+     val1 =  arr2.indexOf(str1[i]); 
+  //return val1;
+    if(val1 + 13 > (arr2.length -1)){
+      index1  = (arr2.length-1) - val1; 
+      //return index1;
+      index2 = 12 - index1;
+   //return index2;
+      arr1[i] = arr2[index2];
+      return arr1;
+  } 
+        arr1[i] = arr2[val1 + 13];
+
+  }
+  
+  str2 = arr1.join('');
+  return str2;
+}
+
+rot13("Z");
